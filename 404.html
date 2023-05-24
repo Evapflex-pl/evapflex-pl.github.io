@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl-pl" lang="pl-pl" dir="ltr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>404 - Nie ma takiej strony :(</title>
+	<link rel="stylesheet" href="/templates/system/css/error.css" type="text/css" />
+	<link rel="stylesheet" href="/css/cookieconsent.css" media="print" onload="this.media='all'">
+	<script async="" type="text/plain" data-cookiecategory="analytics" src="https://www.googletagmanager.com/gtag/js?id=UA-68873913-1"></script>
+  	<script type="text/plain" data-cookiecategory="analytics">
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){window.dataLayer.push(arguments);}
+	    gtag('js', new Date());
+	    gtag('config', 'UA-68873913-1');
+  	</script>
+	</head>
+<body>
+	<div class="error">
+		<div id="outline">
+		<div id="errorboxoutline">
+			<div id="errorboxheader">404 - Nie ma takiej strony :(</div>
+			<div id="errorboxbody">
+			<p>Jeśli problem się powtarza, skontaktuj się z administratorem witryny.</p>
+			<div id="techinfo">
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script>
+        window.addEventListener('load', function(){
+
+            // obtain plugin
+            var cc = initCookieConsent();
+
+            // run plugin with your configuration
+            cc.run({
+                current_lang: 'pl',
+                autoclear_cookies: true,                   // default: false
+                page_scripts: true,                        // default: false
+
+                onFirstAction: function(user_preferences, cookie){
+                    // callback triggered only once on the first accept/reject action
+                },
+
+                onAccept: function (cookie) {
+                    // callback triggered on the first accept/reject action, and after each page load
+                },
+
+                onChange: function (cookie, changed_categories) {
+                    // callback triggered when user changes preferences after consent has already been given
+                },
+
+                languages: {
+                    'pl': {
+                        consent_modal: {
+                            title: 'Informacja o RODO i wykorzystaniu Cookies',
+                            description: 'Zgodnie z zaleceniami RODO zamieszczamy informację o sposobie przetwarzania przez nas danych osobowych <button type="button" data-cc="c-settings" class="cc-link">Dowiedz się więcej.</button> <br><br> Serwis wykorzystuje niezbędnye pliki Cookies, aby zapewnić jej prawidłowe działanie, oraz śledzące pliki Cookies, aby zrozumieć, w jaki sposób użytkownik wchodzi z nią w interakcję. Te ostatnie będą ustawiane tylko po wyrażeniu zgody. <button type="button" data-cc="c-settings" class="cc-link">Pozwól mi wybrać.</button>',
+                            primary_btn: {
+                                text: 'Zakaceptuj wszystko',
+                                role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                            },
+                            secondary_btn: {
+                                text: 'Zaakceptuj tylko wymagane',
+                                role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                            }
+                        },
+                        settings_modal: {
+                            title: 'Ustawienia Cookies i Informacja RODO',
+                            save_settings_btn: 'Zapisz',
+                            accept_all_btn: 'Zakaceptuj wszystko',
+                            reject_all_btn: 'Zaakceptuj tylko wymagane',
+                            close_btn_label: 'Zamknij',
+                            // cookie_table_caption: 'Cookie list',
+                            cookie_table_headers: [
+                                {col1: 'Name'},
+                                {col2: 'Domain'},
+                                {col3: 'Expiration'},
+                                {col4: 'Description'}
+                            ],
+                            blocks: [
+                                {
+                                    title: 'RODO i przetwarznie danych',
+                                    description: 'Zgodnie z zaleceniami RODO zamieszczamy informację o sposobie przetwarzania przez nas danych osobowych prosimy o zapoznanię się z dokumentem pod adresem <a class="cc-link" href="/index.php/rodo.html">http://evapflex.pl/index.php/rodo.html</a>'
+                                }, {
+                                    title: 'Wykorzystanie Cookies',
+                                    description: 'Serwis wykorzystuje niezbędnye pliki Cookies, aby zapewnić jej prawidłowe działanie, oraz śledzące pliki Cookies, aby zrozumieć, w jaki sposób użytkownik wchodzi z nią w interakcję. Dla każdej kategorii można wybrać opcję opt-in/out w dowolnym momencie. Aby uzyskać więcej informacji na temat plików cookie i innych wrażliwych danych, zapoznaj się z pełną treścią <a href="/index.php/cookiespolicy.html" class="cc-link">Polityki Cookies</a>.'
+                                }, {
+                                    title: 'Niezbędne ciasteczka',
+                                    description: 'Te pliki cookie są niezbędne do prawidłowego funkcjonowania mojej strony internetowej. Bez tych plików cookie witryna nie działałaby prawidłowo',
+                                    toggle: {
+                                        value: 'necessary',
+                                        enabled: true,
+                                        readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                    }
+                                }, {
+                                    title: 'Wydajnościowe i analityczne pliki cookie',
+                                    description: 'Te pliki cookie umożliwiają witrynie zapamiętanie wyborów dokonanych przez użytkownika w przeszłości',
+                                    toggle: {
+                                        value: 'analytics',     // your cookie category
+                                        enabled: false,
+                                        readonly: false
+                                    },
+                                    cookie_table: [             // list of all expected cookies
+                                        {
+                                            col1: '^_ga',       // match all cookies starting with "_ga"
+                                            col2: 'google.com',
+                                            col3: '2 years',
+                                            col4: 'description ...',
+                                            is_regex: true
+                                        },
+                                        {
+                                            col1: '_gid',
+                                            col2: 'google.com',
+                                            col3: '1 day',
+                                            col4: 'description ...',
+                                        }
+                                    ]
+                                }, {
+                                    title: 'Więcej Informacji',
+                                    description: 'Jeśli chcesz dowiedzieć się wiecej <a class="cc-link" href="/index.php/contact.html">skontaktuj się z nami</a>.',
+                                }
+                            ]
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+      #s-bl .c-bl:nth-child(2) {
+        border: none;
+        margin-bottom: 2em;
+        margin-top: 0;
+        padding: 0;
+        transition: none;
+      }
+    </style>
+</body>
+</html>
